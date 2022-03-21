@@ -29,6 +29,12 @@
       ],
       "type": "media",
       "multiple": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "category"
     }
   }
 }
